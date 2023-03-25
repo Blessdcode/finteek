@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css link -->
+    <link rel="stylesheet" href="/public/css/output.css">
+    <!-- google font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+
+    <title>Finteek</title>
+</head>
+
+<body class="bg-white  font-body dark:bg-zinc-900 ">
+    <!-- Header -->
+    <header class=" ">
+        <div class=" py-3  top-0 w-full z-50 ">
+            <div class="">
+                <nav class=" relative stickyy">
+                    <!-- logo -->
+                    <div class="container mx-auto pt-4">
+                        <div class="flex md:justify-around justify-between items-center px-2">
+                            <div class="logo cursor-pointer">
+                                <a href="#hero">
+                                    <img src="/public/img/logo.png" alt="">
+                                </a>
+                            </div>
+                            <!-- list items -->
+                            <div class="md:flex space-x-12 hidden">
+                                <a href="" class="text-lg text-Slate_gray hover:text-primary hover:opacity-60 dark:text-white dark:hover:text-Slate_gray">Home</a>
+                                <a href=""
+                                    class="text-lg text-Slate_gray hover:text-primary  hover:opacity-60 dark:text-white dark:hover:text-Slate_gray">About</a>
+                                <a href="" class="text-lg text-Slate_gray hover:text-primary hover:opacity-60 dark:text-white dark:hover:text-Slate_gray">FAQs</a>
+                                <a href="" class="text-lg text-Slate_gray hover:text-primary hover:opacity-60 dark:text-white dark:hover:text-Slate_gray">Contact
+                                    Us</a>
+                            </div>
+                            <!-- bnt -->
+                            <div class="btn md:flex gap-3  hidden">
+                                <div class="p-3 rounded-2xl w-[101px] primaryBtn1">
+                                    Login</div>
+                                <div class="primaryBtnOutline">
+                                    Sign Up for Free</div>
+                            </div>
+
+                            <!-- burger -->
+                            <!-- <div class="px-4 cursor-pointer md:hidden" id="burger">
+                            <img src="/public/img/menu-icon.png" alt="">
+                        </div> -->
+                            <!-- hamburger -->
+                            <button id="menu-btn" class=" block hamburger md:hidden focus:outline-none bg">
+                                <span class="hamburger-top bg-primary"></span>
+                                <span class="hamburger-middle  bg-primary"></span>
+                                <span class="hamburger-bottom  bg-primary"></span>
+                            </button>
+
+                        </div>
+                    </div>
+                </nav>
+                <div class="md:hidden main-menu fixed w-full left-0 top-0 z-20">
+                    <div id="menu"
+                        class="remove absolute flex-col hidden items-end self-end py-5 mt-10 space-y-5 px-5 font-bold bg-white sm:w-auto sm:self-center top-6 left-0 right-0 shadow-md text-lg dark:bg-zinc-900 dark:text-Milk">
+                        <a href=""
+                            class="hover:bg-offWhite w-full text-end pr-3 rounded-sm py-3 hover:opacity-60 dark:hover:bg-transparent">Home</a>
+                        <a href=""
+                            class="hover:bg-offWhite w-full text-end pr-3 rounded-sm py-3 hover:opacity-60 dark:hover:bg-transparent">About<a>
+                                <a href=""
+                                    class="hover:bg-offWhite w-full text-end pr-3 rounded-sm py-3 hover:opacity-60 dark:hover:bg-transparent">FAQs</a>
+                                <a href=""
+                                    class="hover:bg-offWhite w-full text-end pr-3 rounded-sm py-3 hover:opacity-60 dark:hover:bg-transparent">Contact
+                                    Us</a>
+
+
+                                <div class="primaryBtnOutline w-full">
+                                    Login</div>
+                                <div class="primaryBtn1 w-full">
+                                    Sign Up for Free</div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+
+        <!-- hero section -->
+
+        <section id="hero ">
+            <div class="container mx-auto mt-20 text-center md:px-14 px-[30px] ">
+                <div class="flex flex-col  md:flex-row justify-center items-center md:justify-evenly">
+                    <div
+                        class="flex flex-col md:text-start md:justify-around justify-center items-center md:items-start md:pl-16">
+                        <div class="md:w-[503px] w-full ">
+                            <h1 class="md:text-6xl text-[38px] md:leading-[87px] text-secondary font-semibold dark:text-primary">
+                                Pay, Invest, Save your
+                                Cash with a single bank</h1>
+
+                            <p class="md:text-xl md:text-start text-center my-7 text-Slate_gray dark:text-white">Fintekk is
+                                the bank that does it all. Manage
+                                everything
+                                directly and easy with fintekk.</p>
+                        </div>
+                        <!-- btn -->
+                        <div
+                            class="p-3 mb-8 rounded-2xl text-[21px] flex justify-center font-medium  text-white border  border-primary bg-primary cursor-pointer hover:shadow-lg  transition-all ">
+                            Sign Up for Free</div>
+
+                        <!-- download -->
+                        <div class="flex gap-4 flex-col md:flex-row mb-8">
+                            <div
+                                class="flex flex-row space-x-3 border-2 rounded-xl p-3 font-light cursor-pointer hover:bg-offWhite hover:shadow-sm dark:text-primary">
+                                <img src="/public/img/google-playstore.svg" alt="">
+                                <span>Get on Android</span>
+                            </div>
+                            <div
+                                class="flex flex-row space-x-3 border-2 rounded-xl p-3 font-light cursor-pointer hover:bg-offWhite hover:shadow-sm dark:text-primary">
+                                <img src="/public/img/applestore.svg" alt="">
+                                <span>Get on iphone</span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="">
+                        <!-- <img src="/public/img/hero-img.png" alt="" class="w-fit hidden lg:block"> -->
+                        <img src="/public/img/hero-sm.png" alt="" class="w-fit block lg:hidden">
+                    </div>
+                    <div class="relative hidden lg:block ">
+                        <img src="/public/img/picture.png" alt="">
+                        <div class="floating ">
+                            <img src="/public/img/Floating card 2.png" alt="" class="absolute top-56 -left-32">
+                            <img src="/public/img/Floating card 1.png" alt="" class="absolute bottom-10 -right-20">
+                            <img src="/public/img/Floating card 3.png" alt="" class="absolute top-36 -right-20">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <!-- Main section -->
+    <main>
+        <!-- brands -->
+        <aside class="bg-offWhite py-3 md:mt-24 mt-10 dark:bg-zinc-900">
+            <!-- brands logo -->
+            <section id="brands" class="container mx-auto my-11 px-14 ">
+                <div class="brand flex justify-between items-center space-x-8 overflow-x-scroll  ">
+                    <img src="/public/img/bloomberg logo.png" alt="bloomberg">
+                    <img src="/public/img/CNBC logo.png" alt="CNBC">
+                    <img src="/public/img/Forbes logo.png" alt="Forbes">
+                    <img src="/public/img/stripe logo.png" alt="stripe">
+                    <img src="/public/img/Quartz logo.png" alt="Quartz">
+                </div>
+            </section>
+        </aside>
+
+        <article>
+            <section id="active">
+                <div class="container mx-auto my-8 h-[130px] md:h-[230px] flex justify-center items-center">
+                    <h2 class="text-secondary text-center md:w-1/2 md:text-[50px] text-[28px] font-bold dark:text-offWhite">
+                        More than <span class="text-primary">10,000</span> active users trust Fintekk
+                    </h2>
+                </div>
+            </section>
+        </article>
+
+        <!-- service -->
+        <article>
+            <div class=" bg-offWhite dark:bg-zinc-900">
+                <section class="container mx-auto my-16 text-center md:px-14 px-[30px]  ">
+                    <div class="text-center flex flex-col justify-center items-center pt-[98px]">
+                        <p class="text-sm text-Slate_gray dark:text-offWhite">
+                            OUR SERVICES
+                        </p>
+                        <h3 class="text-secondary text-[38px] md:text-5xl my-4 font-semibold dark:text-primary">What we offer</h3>
+                        <p class="text-md text-Slate_gray md:w-1/3 text-center dark:text-Milk">We help individuals become more
+                            flexible
+                            and responsible with their finances and handle payments smooth and easy. </p>
+                    </div>
+
+                    <!-- card -->
+                    <div class="flex justify-center md:justify-around gap-10 items-center py-14  flex-wrap ">
+
+                        <!-- card1 -->
+                        <div class="relative overflow-hidden ">
+                            <div class="borderline border-4 border-card1 dark:border-zinc-900">
+                                <div
+                                    class="w-[315px] h-[430px]  rounded-xl bg-card1 flex flex-col justify-start items-start p-6">
+                                    <h4 class="text-secondary text-[28px] lg:text-[36px] font-semibold">Easy Payment
+                                    </h4>
+                                    <p class="my-4 text-Slate_gray text-start text-base font-medium">Stress-free payment
+                                        for all transactions that you do at any time.</p>
+                                    <span class="text-primary text-[18px] font-semibold mb-4 hover:opacity-50">Read More
+                                        &nbsp; &#8594; </span>
+                                    <img src="/public/img/easy-payment.png" alt="" class="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- card2 -->
+                        <div class="relative overflow-hidden">
+                            <div class="borderline border-4 border-card2 dark:border-zinc-900">
+                                <div
+                                    class="w-[315px] h-[430px]  rounded-xl bg-card2 flex flex-col justify-start items-start p-6">
+                                    <h4 class="text-secondary text-[28px] lg:text-[36px] font-semibold">Investments
+                                    </h4>
+                                    <p class="my-4 text-Slate_gray text-start text-base font-medium">Grow your money by
+                                        investing in pre-vetted investment opportunities.</p>
+                                    <span class="text-primary text-[18px] font-semibold mb-4 hover:opacity-50">Read More
+                                        &nbsp; &#8594; </span>
+                                    <img src="/public/img/investment.png" alt="" class="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- card1 -->
+                        <div class="relative overflow-hidden">
+                            <div class="borderline border-4 border-card3 dark:border-zinc-900">
+                                <div
+                                    class="w-[315px] h-[430px]  rounded-xl bg-card3 flex flex-col justify-start items-start p-6">
+                                    <h4 class="text-secondary text-[28px] lg:text-[36px] font-semibold">Fixed Savings
+                                    </h4>
+                                    <p class="my-4 text-Slate_gray text-start text-base font-medium">Build a dedicated
+                                        savings faster on your terms automatically or manually.</p>
+                                    <span class="text-primary text-[18px] font-semibold mb-4 hover:opacity-50">Read More
+                                        &nbsp; &#8594; </span>
+                                    <img src="/public/img/savings.png" alt="" class="">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+            </div>
+            </section>
+        </article>
+        <!-- get app -->
+        <section class="">
+            <div class="container mx-auto py-16 text-center md:px-14 px-[20px]">
+                <div
+                    class="container flex flex-col items-center justify-between px-4 mx-auto space-y-12 md:space-y-0 md:flex-row">
+
+                    <div class="flex flex-col  space-y-12 md:w-1/2">
+                        <img src="/public/img/iPhone-13-Pro-Front.png" alt=""
+                            class="md:w-[337px] md:h-[730px] w-[224px] h-[484]">
+                    </div>
+
+                    <div class="flex flex-col items-start justify-start mt-8 md:mt-0 md:text-left md:w-1/2">
+                        <!-- heading text -->
+                        <h3 class=" justify-start text-[24px] md:text-[50px] text-secondary font-semibold dark:text-primary">Start the
+                            journey to reach your financial goals today.</h3>
+
+                        <!-- List Item 1 -->
+                        <div class="flex flex-row space-y-1 mt-10 items-start justify-start gap-5">
+                            <div class="px-4 py-2 text-primary md:py-1 flex flex-col justify-center items-center gap-3">
+                                <p class="text-[24px] md:text-3xl font-semibold">01</p>
+                                <div class="h-[80px] md:h-[140px] bg-primary w-[2px] border-l border-primary"></div>
+                            </div>
+                            <div class="flex flex-col justify-start items-start">
+                                <h3 class="text-[18px] font-bold md:mb-4 md:hidden text-secondary dark:text-Milk">
+                                    Download the mobile app
+                                </h3>
+                                <h3 class="hidden mb-4 text-3xl font-bold md:block text-secondary  dark:text-Milk">
+                                    Download the mobile app
+                                </h3>
+                                <p class="text-Slate_gray text-base md:text-3xl text-start font-light space-x-3 pt-5 dark:text-Milk">
+                                    Sign up for an account with your name, email and phone number.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- List Item 2 -->
+                        <div class="flex flex-row space-y-1 mt-10 items-start justify-start gap-5">
+                            <div class="px-4 py-2 text-primary md:py-1 flex flex-col justify-center items-center gap-3">
+                                <p class="text-[24px] md:text-3xl font-semibold">02</p>
+                                <div class="h-[80px] md:h-[140px] bg-primary w-[2px] border-l border-primary"></div>
+                            </div>
+                            <div class="flex flex-col justify-start items-start">
+                                <h3 class="text-[18px] font-bold md:mb-4 md:hidden text-secondary dark:text-Milk">
+                                    Create a free account
+                                </h3>
+                                <h3 class="hidden mb-4 text-3xl font-bold md:block text-secondary dark:text-Milk ">
+                                    Create a free account
+                                </h3>
+                                <p class="text-Slate_gray text-base md:text-3xl text-start font-light space-x-3 pt-5 dark:text-Milk">
+                                    Sign up for an account with your name, email and phone number.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- List Item 3 -->
+                        <div class="flex flex-row space-y-1 mt-10 items-start justify-start gap-5">
+                            <div class="px-4 py-2 text-primary md:py-1 flex flex-col justify-center items-center gap-3">
+                                <p class="text-[24px] md:text-3xl font-semibold">03</p>
+                                <div class="h-[80px] md:h-[140px] bg-primary w-[2px] border-l border-primary"></div>
+                            </div>
+                            <div class="flex flex-col justify-start items-start">
+                                <h3 class="text-[18px] font-bold md:mb-4 md:hidden text-secondary dark:text-Milk">
+                                    Add a payment method
+                                </h3>
+                                <h3 class="hidden mb-4 text-3xl font-bold md:block text-secondary dark:text-Milk">
+                                    Add a payment method
+                                </h3>
+                                <p class="text-Slate_gray text-base md:text-3xl text-start font-light space-x-3 pt-5 dark:text-Milk">
+                                    Using your debit card, bank account, QR code, perform your first transaction.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="btn3 mt-6 mx-auto text-center w-[192px]">
+                            Download Now
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- accordion -->
+        <article>
+            <section class="container mx-auto my-16 md:px-14 px-[0]">
+                <div class="">
+                    <div class="flex flex-col-reverse md:flex-row flex-wrap justify-between items-center ">
+
+                        <!-- accordion card -->
+                        <div
+                            class="accordion bg-primary flex flex-col justify-start items-start md:py-16 py-8 md:px-16 px-6 md:w-[782px] w:[375px] ">
+                            <h3 class="md:text-7xl text-4xl text-white font-semibold">
+                                FAQS
+                            </h3>
+                            <!-- accordions -->
+
+                            <div class=" contain">
+                                <div class="wrapper relative py-5">
+                                    <div
+                                        class="listt flex justify-between border border-white md:p-5 p-3 rounded-md cursor-pointer">
+                                        <div class="text-white md:text-2xl text-[18px] font-normal  ">
+                                            Is fintekk’s security guaranteed?
+                                        </div>
+                                        <div
+                                            class=" before:top-0 before:left-0 before:translate-x-2before:transform before:font-bold before:text-3xl before:text-white before:content-['+'] ">
+                                        </div>
+                                        <!-- <div class="minus  ">
+                                        </div> -->
+
+                                    </div>
+                                    <div
+                                        class="contentt relative overflow-hidden p-0 bg-white h-[0] rounded-md transition duration-100">
+                                        <p class="md:text-2xl text-[18px] text-secondary overflow-s">Amet minim mollit
+                                            non deserunt
+                                            ullamco est sit aliqua dolor do amet sint. </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" contain">
+                                <div class="wrapper relative py-5">
+                                    <div
+                                        class="listt flex justify-between border border-white md:p-5 p-3 rounded-md cursor-pointer">
+                                        <div class="text-white md:text-2xl text-[18px] font-normal  ">
+                                            How to activate Fintekk account
+                                        </div>
+                                        <div
+                                            class=" before:top-0 before:left-0 before:translate-x-2before:transform before:font-bold before:text-3xl before:text-white before:content-['+'] ">
+                                        </div>
+                                        <!-- <div class="minus  ">
+                                        </div> -->
+
+                                    </div>
+                                    <div
+                                        class="contentt relative overflow-hidden p-0 bg-white h-[0] rounded-md transition duration-100">
+                                        <p class="md:text-2xl text-[18px] text-secondary overflow-s">Amet minim mollit
+                                            non deserunt
+                                            ullamco est sit aliqua dolor do amet sint. </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" contain">
+                                <div class="wrapper relative py-5">
+                                    <div
+                                        class="listt flex justify-between border border-white md:p-5 p-3 rounded-md cursor-pointer">
+                                        <div class="text-white md:text-2xl text-[18px] font-normal  ">
+                                            What should i do if i forget my pin
+                                        </div>
+                                        <div
+                                            class=" before:top-0 before:left-0 before:translate-x-2before:transform before:font-bold before:text-3xl before:text-white before:content-['+'] ">
+                                        </div>
+                                        <!-- <div class="minus  ">
+                                        </div> -->
+
+                                    </div>
+                                    <div
+                                        class="contentt relative overflow-hidden p-0 bg-white h-[0] rounded-md transition duration-100">
+                                        <p class="md:text-2xl text-[18px] text-secondary overflow-s">Amet minim mollit
+                                            non deserunt
+                                            ullamco est sit aliqua dolor do amet sint. </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="w-fit">
+                            <img src="/public/img/questions.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+        <!-- TESTIMONIALS -->
+        <!-- <aside class="bg-offWhite">
+            <section class="container mx-auto py-16 text-center md:px-14 px-[20px overflow-hidden">
+                <div class="flex flex-col md:flex-row justify-center md:justify-between items-center space-x-10 space-y-10">
+                    <div class="testimonial flex flex-col  justify-start items-start">
+                        <p class="text-2xl text-[#3A3A3A]">TESTIMONIALS</p>
+                        <h3 class=" text-secondary text-5xl font-semibold">What Our Customers Say About Us</h3>
+                    </div>
+                </div>
+            </section>
+        </aside> -->
+
+        <aside>
+            <section class="container mx-auto py-16 text-center md:px-14 px-[20px]">
+                <div class="bg-primary flex flex-col md:space-y-8 space-y-5 md:p-12 p-6 rounded-md">
+                    <h3
+                        class="text-white md:text-center text-[38px] text-left  md:mx-auto font-semibold md:w-1/2 md:text-[50px]">
+                        Start growing <br> your wealth today
+                    </h3>
+                    <form action=""
+                        class=" mx-auto md:flex flex-wrap md:space-y-0 space-y-3 block py-2 md:rounded-full md:border md:border-solid md:border-white md:bg-transparent items-start text-left md:text-center">
+
+
+                        <input type="email" id="subject" name="email" required minlength="3" maxlength="60"
+                            placeholder="Enter your email address"
+                            class="hidden md:inline-block md:rounded-full rounded-lg text-white px-9 py-3 bg-transparent outline-none text-2xl  placeholder:text-white placeholder:text-[18 px]" />
+
+                        <button
+                            class="hidden md:inline-block bg-white text-black text-xl md:rounded-full rounded-lg font-semibold py-5 px-9  mr-2 cursor-pointer hover:bg-Milk ">
+                            Sign up
+                        </button>
+
+                        <!-- small screen -->
+                        <input type="email" id="subject" name="email" required minlength="3" maxlength="60"
+                            placeholder="Enter your email address"
+                            class="border  rounded-lg text-white py-3 px-6 bg-transparent outline-none  text-xl placeholder:text-white md:hidden block" />
+
+                        <button
+                            class="md:hidden inline-block bg-white text-black text-xl rounded-lg font-semibold py-3  px-5 mr-1 cursor-pointer hover:bg-Milk ">
+                            Sign up
+                        </button>
+                    </form>
+                </div>
+            </section>
+        </aside>
+    </main>
+
+    <footer class="bg-offWhite dark:bg-zinc-900">
+        <!-- Flex Container -->
+        <div
+            class="container mx-auto my-16 pt-14 md:px-10 px-[38px] flex flex-wrap justify-start space-y-8 md:flex-row md:space-y-0 ">
+            <!-- Logo and social links container -->
+            <div class=" xl:w-1/2 ">
+                <h4 class="text-secondary text-4xl font-semibold">
+                    Fintekk
+                </h4>
+                <p class="text-Slate_gray text-lg md:w-1/2 dark:text-Milk">Fintekk is the bank that does it all. Manage everything
+                    directly and
+                    easy with fintekk.</p>
+            </div>
+            <!-- List Container -->
+            <div class="flex flex-row justify-between items-start flex-wrap xl:flex-nowrap gap-11">
+
+                <div class="flex justify-between items-start md:w-1/2 w-full space-x-10 dark:text-Milk">
+
+                    <div class="flex flex-col space-y-2 text-secondary">
+                        <a href="#" class="hover:text-brightRed font-semibold text-secondary text-xl dark:text-Milk">Company</a>
+                        <a href="#" class="hover:text-Slate_gray text-lg font-light dark:text-Milk">About Us</a>
+                        <a href="#" class="hover:text-Slate_gray text-lg font-light dark:text-Milk">Careers</a>
+                        <a href="#" class="hover:text-Slate_gray text-lg font-light dark:text-Milk">Privacy</a>
+                        <a href="#" class="hover:text-Slate_gray text-lg font-light dark:text-Milk">Terms</a>
+                    </div>
+
+                    <div class="flex flex-col space-y-2 text-secondary">
+                        <a href="#" class="hover:text-brightRed font-semibold text-secondary text-xl dark:text-Milk">Services</a>
+                        <a href="#" class="hover:text-Slate_gray text-lg font-light dark:text-Milk">Payments</a>
+                        <a href="#" class="hover:text-Slate_gray text-lg font-light dark:text-Milk">Investments</a>
+                        <a href="#" class="hover:text-Slate_gray text-lg font-light dark:text-Milk">Savings Plans</a>
+                    </div>
+
+                </div>
+
+                <div class="flex justify-between items-start md:w-1/2 w-full space-x-10 ">
+
+                    <div class="flex flex-col space-y-2 text-secondary">
+                        <a href="#" class="hover:text-brightRed font-semibold text-secondary text-xl dark:text-Milk">Resources</a>
+                        <a href="#" class="hover:text-Slate_gray text-lg font-light dark:text-Milk">Media</a>
+                        <a href="#" class="hover:text-Slate_gray text-lg font-light dark:text-Milk">FAQs</a>
+                        <a href="#" class="hover:text-Slate_gray text-lg font-light dark:text-Milk">Help Centre</a>
+                        <a href="#" class="hover:text-Slate_gray text-lg font-light dark:text-Milk">Security</a>
+                    </div>
+
+                    <div class="flex flex-col space-y-2 text-secondary">
+                        <a href="#" class="hover:text-brightRed font-semibold text-secondary text-xl dark:text-Milk">Contact Us</a>
+                        <a href="#" class="hover:text-Slate_gray text-lg font-light dark:text-Milk">www.fintekk.com</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Input Container -->
+        </div>
+        <div
+            class="container mx-auto md:px-10 px-[38px] py-6 flex md:flex-row flex-col md:justify-between justify-center items-center gap-5 ">
+
+            <div class=" text-secondary md:block text-xl flex-1 dark:text-Milk">
+                Copyright 2022 fintekk. All rights reserved
+            </div>
+            <div class=" text-secondary md:block text-xl md:text-right dark:text-Milk">
+                Terms and Conditions, Privacy Policy
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+    <script src="/public/index.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'vertical',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+    </script>
+
+
+</body>
+
+</html>
